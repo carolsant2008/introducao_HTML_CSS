@@ -9,12 +9,12 @@
     <meta name="description" content="Site com o proposito de explicar o HTML como ao todo.">
     <title>Introdução ao HTML</title>
 
-    <link rel="shortcut icon" href="./logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="../arquivos/Logo-Netflix-Symbol.png" type="image/x-icon">
     <!--TAG QUE INCORPORA LOGO E EXIBE NA GUIA DE ENDEREÇO-->
     <!--Atributo rel indica a relação-->
     <!--Atributo href indica a referencia, ou seja, a localização-->
     <!--Linkando o css de forma externa-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../estilizacoes/style.css">
     <!--Linkando de forma interna ou incorporado-->
     <style>
 
@@ -27,52 +27,75 @@
     <h1>Tela principal sobre a netflix</h1>
 
     <header id="cabecalho">
-        <img id="logo" src="./Logo-Netflix-Symbol.png" alt="Imagem da logo da netflix.">
+        <img id="logo" src="../arquivos/Logo-Netflix-Symbol.png" alt="Imagem da logo da netflix.">
         <a href="https://www.youtube.com/watch?v=CZE6WKHSfZc">Sobre a netflix</a>
         <nav>
             <a href="https://www.youtube.com/watch?v=CZE6WKHSfZc">Sobre a netflix</a>
             <a href="https://www.youtube.com/watch?v=CZE6WKHSfZc">Sobre a netflix</a>
             <a href="index.html">Inicial</a>
-            <a href="PDF.pdf" download>Saiba mais</a>
+            <a href="../arquivos/PDF.pdf" download>Saiba mais</a>
         </nav>
     </header>
+
     <main>
         <!-- Seção filme da netflix   -->
         <section>
             <h2>filmes da netflix</h2>
 
+            <div id="container-flex-filmes">
 
-            <div id="filme">
-                <img src="./filme 1.jpg" alt="Filme da netflix">
-                <h3>Uncharted: Fora do Mapa </h3>
-                <span>34,90</span>
+                <article class="filme"> <!--Nome do card-->
+
+                    <!--Tamanho da imagem -->
+                    <img src="../arquivos/filme 1.jpg" alt="Filme da netflix">
+
+                    <!--Estilização nos textos -->
+                    <h3>Uncharted: Fora do Mapa </h3>
+                    <span>34,90</span>
+                </article>
+
+
+                <article class="filme"> <!--Nome do card-->
+
+                    <!--Tamanho da imagem -->
+                    <img src="../arquivos/filme 1.jpg" alt="Filme da netflix">
+
+                    <!--Estilização nos textos -->
+                    <h3>Uncharted: Fora do Mapa </h3>
+                    <span>34,90</span>
+                </article>
+
+
+                <article class="filme"> <!--Nome do card-->
+
+                    <!--Tamanho da imagem -->
+                    <img src="../arquivos/filme 1.jpg" alt="Filme da netflix">
+
+                    <!--Estilização nos textos -->
+                    <h3>Uncharted: Fora do Mapa </h3>
+                    <span>34,90</span>
+                </article>
+
             </div>
+
+
         </section>
 
-        <section>
+        <section id="container-flex-suporte">
             <h2>Suporte ao cliente</h2>
             <!-- TAG form de formulario -->
             <form>
                 <label for="campo-nomecompleto">Nome completo:</label>
-                <input type="text" placeholder="Dgite seu nome aqui" id="campo-nomecompleto">
-
-                <br /> <!-- quebra linha -->
+                <input class="form_campos_input" type="text" placeholder="Dgite seu nome aqui" id="campo-nomecompleto">
 
                 <label for="campo email">E-mail</label>
-                <input type="email" placeholder="digite o seu email" id="campo email">
-
-                <br /> <!-- quebra linha -->
+                <input class="form_campos_input" type="email" placeholder="digite o seu email" id="campo email">
 
                 <label for="campo senha">Senha:</label>
-                <input type="password" placeholder="crie uma senha" id="campo senha">
-
-                <br /> <!-- quebra linha -->
+                <input class="form_campos_input" type="password" placeholder="crie uma senha" id="campo senha">
 
                 <label for="">Upload:</label>
-                <input type="file" name="" id="">
-
-
-                <br /> <!-- quebra linha -->
+                <input class="form_campos_input" type="file" name="" id="">
 
                 <label for="Estado">Upload:</label>
                 <select name="" id="">
@@ -88,28 +111,22 @@
                     <option value="SC">SC</option>
                 </select>
 
-                <br /> <!-- quebra linha -->
-
-                <input type="checkbox" name="" id="">
+                <input class="form_campos_input" type="checkbox" name="" id="">
                 <label for="">Li e concordo com os termos.</label>
 
-                <br /> <!-- quebra linha -->
-
                 <label for="">Sexo:</label>
-                <br>
-
+        
                 <label for="">Feminino</label>
-                <input type="radio" name="opcao-genro" id="" value="Feminino">
+                <input class="form_campos_input" type="radio" name="opcao-genro" id="" value="Feminino">
                 <label for="">Masculino</label>
-                <input type="radio" name="opcao-genro" id="" value="Masculino">
+                <input class="form_campos_input" type="radio" name="opcao-genro" id="" value="Masculino">
 
-                <br />
                 <!--  atrbuto requiredtorna o campo obrigatorio -->
 
                 <label for="">Descrição:</label>
                 <textarea name="" id="" required></textarea>
 
-                <br />
+              
 
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
@@ -140,7 +157,7 @@
             <li>html</li>
             <li>css</li>
         </ol>
-        <p>Direitos reservaos - 2025.</p>
+        <p>Direitos reserva- 2025.</p>
     </footer>
 </body>
 

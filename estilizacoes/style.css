@@ -1,0 +1,116 @@
+/*seletor global -  indica todos os elementos do html */
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    /* espaço externo */
+    padding: 0;
+    /* espaço interno */
+
+    box-sizing: border-box;
+}
+
+h1 {
+    position: absolute;
+    opacity: 0; /*torna invisivel*/
+    z-index: -1; /*altera a */
+}
+
+#cabecalho {
+    background-color: #f50a0a3f;
+    display: flex;
+    /*ativo o flexbox para poder alinhar os meus elementos filhos*/
+    justify-content: space-between;
+    /* alinha os filhos no sentido do flex*/
+    align-items: center;
+    /*alinnha os filhos no sentido contrario do flex */
+}
+
+#cabecalho>img {
+    width: 100px;
+    /*largura*/
+    height: 100px;
+    /*altura*/
+}
+
+#cabecalho>nav {
+    display: flex;
+    /* align-items: center;*/
+    gap: 10px;
+}
+
+#cabecalho>nav>a {
+    color: #0000;
+    text-decoration: none;
+    /*a decoracao do texto, neste caso, o link*/
+    font-size: 16px;
+    /*tamanho da fontes*/
+
+}
+
+/* SEÇÃO PRODUTO */
+#container-flex-filmes {
+    /* background-color: #0044ff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filme {
+    /* background-color: #00fffb; */
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+}
+
+.filme>img {
+    width: 100px;
+    height: 175px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* FORMULARIO */
+
+#container-flex-suporte{
+ background-color: #720e4e; 
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+padding: 25px 0;
+}
+form{
+    background-color: rgb(255, 0, 174);
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form_campos_input {
+    height: 35px;
+    border: 3px solid #000000;  
+    border-radius: 5px;  
+    padding: 0 10px;  
+    font-size: 14px;  
+}
+button {
+  height: 35px;
+  width: 100px;
+  border-radius: 10px; 
+  background-color: #ff00e6; 
+  color: #000000; 
+  border: none; 
+  font-size: 16px;
+  
+}
+
